@@ -1,0 +1,104 @@
+
+**I. Software Requirements:**
+**A. Development Environment (on each developer's machine):**
+
+* **Operating System:**
+    * Windows (7, 8, 10, 11)
+    * macOS
+    * Linux (Ubuntu, Fedora, CentOS, etc.)
+* **Java Development Kit (JDK):**
+    * Latest stable version of Java SE (Standard Edition) - currently likely Java 17 or later. Ensure compatibility with NetBeans.
+* **NetBeans IDE:**
+    * Latest stable version of NetBeans. Download from the official Apache NetBeans website.
+* **SQL Database:**
+    * MySQL Community Server
+    * PostgreSQL
+    * Oracle Database (Express Edition is free for development)
+    * Microsoft SQL Server (Developer Edition is free for development)
+* **Database Connector (JDBC Driver):**
+    * MySQL Connector/J (for MySQL)
+    * PostgreSQL JDBC Driver (for PostgreSQL)
+    * Oracle JDBC Driver (ojdbc) (for Oracle)
+    * Microsoft JDBC Driver for SQL Server (for SQL Server)
+    * These drivers will need to be added to your NetBeans project libraries to enable communication between your Java application and the database.
+* **Version Control System:**
+    * Git (recommended)
+    * Subversion (SVN) - NetBeans has built-in support for both.
+    * A platform like GitHub, GitLab, or Bitbucket for remote repository hosting is highly recommended for collaboration.
+* **UML Diagramming Tool (Optional but Recommended for Design):**
+    * NetBeans UML Plugin (may need to be installed separately)
+    * External tools like draw.io, Lucidchart, or Enterprise Architect can also be used.
+* **Testing Frameworks (for writing unit and integration tests within NetBeans):**
+    * JUnit (typically integrated with NetBeans)
+    * Mockito (can be easily added as a library)
+    * TestNG (can be added as a NetBeans plugin or library)
+* **Reporting Tools (Optional, if you need to generate reports from your application):**
+    * JasperReports Library (and the iReport/Jaspersoft Studio designer, often used with NetBeans)
+    * Apache POI (for exporting data to Excel/PDF)
+
+**B. Deployment Environment (Server-side):**
+
+* **Operating System (for Server):**
+    * Linux (recommended for production due to stability and security) - CentOS, Ubuntu, RHEL
+    * Windows Server (if required)
+* **Java Runtime Environment (JRE):**
+    * Compatible version with the JDK used for development.
+* **Application Server (if deploying as a web application or using enterprise Java features):**
+    * Apache Tomcat (common for web applications)
+    * GlassFish (fully supports Java EE)
+    * WildFly (another robust Java EE application server)
+* **SQL Database Server:**
+    * MySQL Server
+    * PostgreSQL Server
+    * Oracle Database Server
+    * Microsoft SQL Server
+* **Web Server (Optional, for serving static content or as a reverse proxy):**
+    * Apache HTTP Server
+    * Nginx
+
+**C. Client-side (if a web interface is involved):**
+
+* **Web Browser:**
+    * Google Chrome
+    * Mozilla Firefox
+    * Safari
+    * Microsoft Edge
+
+**II. Hardware Requirements:**
+
+These are general guidelines for a development environment using NetBeans. Server hardware will depend heavily on the expected load and data volume.
+
+**A. Development Environment (for each developer):**
+
+* **Processor:** Intel Core i5 or equivalent AMD processor (or better)
+* **RAM:** 8 GB or 16 GB recommended. NetBeans can be resource-intensive, especially with multiple projects or large codebases open.
+* **Storage:**
+    * SSD (Solid State Drive) with at least 256 GB for faster IDE loading, project building, and overall system performance. 512 GB or 1 TB is preferable.
+* **Monitor:** At least one monitor with a decent resolution (1920x1080 or higher) for comfortable coding within the NetBeans interface. Dual monitors can significantly improve productivity.
+
+**B. Deployment Environment (Server-side):**
+
+* **Server Hardware:** This is highly dependent on the anticipated user load, data size, and application complexity.
+    * **Processor:** Multi-core server-grade processors (e.g., Intel Xeon or AMD EPYC). The number of cores will depend on the expected concurrency.
+    * **RAM:** Sufficient RAM to hold the application in memory, database buffers, and handle concurrent requests. This can range from 8 GB for a small internal system to 64 GB or more for a larger, public-facing application.
+    * **Storage:**
+        * Fast and reliable storage for the database (SSDs or high-performance HDDs in RAID configuration for redundancy and performance). The size will depend on the expected data volume (passenger records, flight schedules, booking information, etc.).
+        * Sufficient storage for the application server, deployment artifacts, and logs.
+    * **Network Interface Card (NIC):** High-speed network connectivity (Gigabit Ethernet or faster) for handling network traffic.
+* **Database Server Hardware:** Often requires more resources than the application server, especially in terms of RAM and disk I/O.
+    * **Processor:** Powerful multi-core server processors.
+    * **RAM:** Large amounts of RAM for database caching.
+    * **Storage:** High-performance, reliable storage (SSDs or fast SAS drives in RAID) optimized for database read/write operations. Consider separate storage for data and transaction logs.
+* **Network Infrastructure:** Reliable network infrastructure with sufficient bandwidth to handle communication between clients, application servers, and database servers. Firewalls and security measures are crucial.
+
+**C. Client-side (for End Users):**
+
+* Standard desktop or laptop computers with a modern web browser. Specific hardware requirements are minimal for accessing a web-based application.
+
+**Key Considerations when using NetBeans:**
+
+* **NetBeans Plugins:** Depending on your project's specific needs, you might require additional NetBeans plugins for tasks like database management, UML modeling, or integration with other tools.
+* **Project Structure:** Organize your NetBeans project logically (e.g., using Maven or Gradle within NetBeans) to manage dependencies and build processes effectively.
+* **Profiling Tools:** NetBeans has built-in profiling tools that can be helpful for identifying performance bottlenecks in your Java application during development.
+
+Remember to carefully assess the scale and complexity of your Airline Management System project to determine the most appropriate hardware and software resources. Start with reasonable estimates and be prepared to scale up your server-side infrastructure as needed.
